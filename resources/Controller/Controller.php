@@ -32,7 +32,7 @@ abstract class Controller
         $classAtual = get_class($this);
         $classAtual = str_replace('Thiagorviero\\Gc\\Controllers\\', '', $classAtual);
         $classAtual = strtolower(str_replace('Controller', '', $classAtual));
-        $pathView =  parse_url($_SERVER['DOCUMENT_ROOT'], PHP_URL_PATH) . '/../src/Views/' . $classAtual . '/' . $this->view . '.phtml';
+        $pathView =  parse_url($_SERVER['DOCUMENT_ROOT'], PHP_URL_PATH) . '/../src/Views/' . ucfirst($classAtual) . '/' . $this->view . '.phtml';
 
         require_once $pathView;
     }

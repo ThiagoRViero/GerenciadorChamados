@@ -6,9 +6,9 @@ use Gc\Resources\Controller\Controller;
 
 class IndexController extends Controller
 {
-    function home()
+    function login()
     {
-        $this->render('login', 'layout');
+        $this->render('login', 'layoutLogin');
     }
     function notFound()
     {
