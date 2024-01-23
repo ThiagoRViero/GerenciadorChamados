@@ -16,7 +16,5 @@
         }
     ],
     "require": {
-        "twbs/bootstrap": "5.*",
-        "components/font-awesome": "5.*"
     }
 }

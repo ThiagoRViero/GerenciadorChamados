@@ -8,8 +8,7 @@ class IndexController extends Controller
 {
     function home()
     {
-        ?> <p class="bg-dark">Teste</p><?php
-        //$this->render('login', 'layoutLogin');
+        $this->render('login', 'layout');
     }
     function notFound()
     {
